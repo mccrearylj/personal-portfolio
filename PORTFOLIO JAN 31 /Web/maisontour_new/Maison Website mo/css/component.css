@@ -1,0 +1,376 @@
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+
+#leftnav {
+	width: 33%;
+	float: left;
+}
+
+#centernav {
+	width: 33%;
+	float: left;
+	text-align: center;
+	color: #002C53;
+	font-weight: bold;
+	letter-spacing: 2px;
+	line-height: 0em;
+	font-size: 1.3em;
+}
+
+#rightnav {
+	width: 33%;
+	float: right;
+}
+ 
+/* Top Navigation Style */
+.codrops-top {
+	width: 100%;
+	background-color: #BFD8F1;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	line-height: 1.1em;
+}
+
+.codrops-top a {
+	display: inline-block;
+	padding: 0 1em;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+}
+
+.codrops-top a:hover {
+	background: rgba(255,255,255,0.8);
+	color: #333;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.over {
+	text-align: center;
+	font-weight: bold;
+}
+
+.codrops-top span.right a {
+	display: block;
+	float: left;
+}
+
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body, .container, .scroller {
+	height: 100%;
+}
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+	text-align: center;
+	background-color: #002C53;
+	color: white;
+	padding-top: 15px;
+	z-index: 20;
+}
+
+#topmost_header img {
+	float: left;
+	margin-left: 20px;
+}
+
+
+.block {
+	float: left;
+	padding: 1em 3em;
+}
+
+.block-40 {
+	width: 40%;
+}
+
+.block-60 {
+	width: 60%;
+}
+
+
+#languages {
+	text-align: center;
+	margin: 100px;
+	font-size: 1.5em;
+	color: white;
+}
+
+.logo {
+	padding-right: 15px;
+}
+
+.logo img {  
+    height: 70%;  
+}
+
+a {
+	text-decoration: none;
+	color: #002C53;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #fff;
+	outline: none;
+}
+
+#title a {
+	text-decoration: none;
+	color: #002C53;
+	outline: none;
+}
+
+#title a:hover, a:focus {
+	color: #80BB3D;
+	outline: none;
+}
+
+
+.scroller {
+	overflow-y: scroll;
+}
+
+.scroller,
+.scroller-inner {
+	position: relative;
+}
+
+.container {
+	position: relative;
+	overflow: hidden;
+	background: #BFD8F1;
+}
+
+.menu-trigger {
+	position: relative;
+	margin-left: 20px;
+	margin-bottom: 0px;
+}
+
+.menu-trigger img {
+	height: 25%;
+	width: auto;
+}
+
+.menu-trigger:before {
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 40px;
+	height: 6px;
+	background: #fff;
+	box-shadow: 0 6px #34495e, 0 12px #fff, 0 18px #34495e, 0 24px #fff;
+}
+
+.mp-pusher {
+	position: relative;
+	left: 0;
+	height: 100%;
+}
+
+.mp-menu {
+	position: absolute; /* we can't use fixed here :( */
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 200px;
+	height: 100%;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	-moz-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+
+.mp-level {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #BFD8F1;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	-moz-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+
+/* overlays for pusher and for level that gets covered */
+.mp-pusher::after,
+.mp-level::after,
+.mp-level::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	content: '';
+	opacity: 0;
+}
+
+.mp-pusher::after,
+.mp-level::after {
+	background: rgba(0,0,0,0.3);
+	-webkit-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+	-moz-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+	transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+}
+
+.mp-pusher.mp-pushed::after,
+.mp-level.mp-level-overlay::after {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.mp-level.mp-level-overlay {
+	cursor: pointer;
+}
+.mp-pusher,
+.mp-level {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+/* First level */
+.mp-menu > .mp-level,
+.mp-menu > .mp-level.mp-level-open,
+.mp-menu.mp-overlap > .mp-level,
+.mp-menu.mp-overlap > .mp-level.mp-level-open {
+	box-shadow: none;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+
+/* content style */
+.mp-menu ul {
+	margin: 0;
+	padding: 0;
+	color: black;
+}
+
+.mp-menu h2 {
+	margin: 0;
+	padding: 1em;
+	color: rgba(0,0,0,0.4);
+	text-shadow: 0 0 1px rgba(0,0,0,0.1);
+	font-weight: 300;
+	font-size: 2em;
+}
+
+.mp-menu ul li > a {
+	display: block;
+	padding: 0.7em 1em 0.7em 1.8em;
+	outline: none;
+	box-shadow: inset 0 -1px rgba(0,0,0,0.2);
+	text-shadow: 0 0 1px rgba(255,255,255,0.1);
+	font-size: 1em;
+	-webkit-transition: background 0.3s, box-shadow 0.3s;
+	-moz-transition: background 0.3s, box-shadow 0.3s;
+	transition: background 0.3s, box-shadow 0.3s;
+}
+
+.mp-menu ul li::before {
+	position: absolute;
+	left: 10px;
+	z-index: -1;
+	color: rgba(0,0,0,0.2);
+	line-height: 3.5;
+}
+
+
+/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+/* We'll show the first level only */
+.no-csstransforms3d .mp-pusher,
+.no-js .mp-pusher {
+	padding-left: 300px;
+}
+
+.no-csstransforms3d .mp-menu .mp-level,
+.no-js .mp-menu .mp-level {
+	display: none;
+}
+
+.no-csstransforms3d .mp-menu > .mp-level,
+.no-js .mp-menu > .mp-level {
+	display: block;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+.menu-trigger img {
+	height: 50%;
+	width: auto;
+}
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+.logo img {  
+    height: 55%;
+}
+
+.logo {
+	padding-right: 10px;
+}
+
+#leftnav {
+	font-size: 1.5em;
+}
+
+#centernav {
+	font-size: 1.5em;
+}
+
+#rightnav {
+	font-size: 1.5em;
+}
+
+.codrops-top {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.1);
+	text-transform: uppercase;
+	font-size: 0.8em;
+	line-height: 0.5em;
+}
+
+}
+
+@media screen and (max-width: 320px) {
+
+.logo img {  
+    height: 40%;  
+}
+
+}

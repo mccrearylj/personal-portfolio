@@ -1,0 +1,418 @@
+html {
+  height: 100%;
+}
+body {
+	margin: 0;
+	font-size: 13px;
+	line-height: 1.5;
+	position: relative;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	background-color: blue;
+}
+.swiper-container {
+	/*** make the height and width 100% if you want the whole page to swipe, and put divs inside each sliding div in the code. Things outside this div will not show otherwise***/
+  width: 100%;
+  height:100%;
+  overflow-y: scroll;
+  color: #fff;
+  text-align: center;
+
+}
+.first-slide {
+  background: #002C53;
+]
+}
+.second-slide {
+  background: #002C53;
+ ]
+}
+.third-slide {
+  background: #002C53;
+]
+}
+.fourth-slide {
+  background: #002C53;
+
+}
+.fifth-slide {
+  background: #002C53;
+
+}
+.pagination {
+  position: absolute;
+  z-index: 20;
+  left: 5%;
+  top: -55px;
+}
+
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 8px;
+  background: #ccc;
+  margin-right: 5px;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.swiper-visible-switch {
+  background: #aaa;
+}
+.swiper-active-switch {
+  background: #002C53;
+}
+
+.swiper-slide {
+	float: left;
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+	-ms-touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+	-ms-touch-action: pan-x;
+}
+
+
+/* swipe CSS*/
+
+
+.swiper-container {
+	margin:0 auto;
+
+	position:relative;
+	overflow:hidden;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	-o-backface-visibility:hidden;
+	backface-visibility:hidden;
+	/* Fix of Webkit flickering */
+	z-index:1;
+}
+.swiper-wrapper {
+	position:relative;
+	width:100%;
+	-webkit-transition-property:-webkit-transform, left, top;
+	-webkit-transition-duration:0s;
+	-webkit-transform:translate3d(0px,0,0);
+	-webkit-transition-timing-function:ease;
+	
+	-moz-transition-property:-moz-transform, left, top;
+	-moz-transition-duration:0s;
+	-moz-transform:translate3d(0px,0,0);
+	-moz-transition-timing-function:ease;
+	
+	-o-transition-property:-o-transform, left, top;
+	-o-transition-duration:0s;
+	-o-transform:translate3d(0px,0,0);
+	-o-transition-timing-function:ease;
+	-o-transform:translate(0px,0px);
+	
+	-ms-transition-property:-ms-transform, left, top;
+	-ms-transition-duration:0s;
+	-ms-transform:translate3d(0px,0,0);
+	-ms-transition-timing-function:ease;
+	
+	transition-property:transform, left, top;
+	transition-duration:0s;
+	transform:translate3d(0px,0,0);
+	transition-timing-function:ease;
+}
+.swiper-free-mode > .swiper-wrapper {
+	-webkit-transition-timing-function: ease-out;
+	-moz-transition-timing-function: ease-out;
+	-ms-transition-timing-function: ease-out;
+	-o-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	margin: 0 auto;
+}
+
+/* ===============================================================
+Your custom styles, here you need to specify container's and slide's
+sizes, pagination, etc.
+================================================================*/
+.swiper-container {
+	/* Specify Swiper's Size: */
+
+	/*width:200px;
+	height: 100px;*/
+}
+.swiper-slide {
+	/* Specify Slides's Size: */
+	
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide-active {
+	/* Specific active slide styling: */
+	
+}
+.swiper-slide-visible {
+	/* Specific visible slide styling: */
+  overflow-y: scroll;	
+    overflow-x: hidden;	
+
+}
+/* ===============================================================
+Pagination Styles
+================================================================*/
+.swiper-pagination-switch {
+	/* Stylize pagination button: */	
+
+}
+.swiper-active-switch {
+	/* Specific active button style: */	
+	
+}
+.swiper-visible-switch {
+	/* Specific visible button style: */	
+	
+}
+
+/************************************************************************** begin other style */
+
+
+img { 
+	max-width: 100% !important;
+    height:auto;
+	border-radius: 15px;
+	
+}
+
+.pic {
+	width: 40%;
+	margin: 5%;
+	float: left;
+	position: relative;
+    display: block;	
+}
+
+.header {
+  position: absolute;
+  z-index: 10;
+  left: 10px;
+  top: 0px;
+  height: 10px;
+  width: 1020px;
+  text-align: left;
+  background-color: none;
+}
+
+.box { 
+	height: auto;
+	max-width: 90%; 
+
+ 	margin: 30px auto;
+}
+
+#navhead { 
+width: 100%;
+background-color: #003;
+height: 4em;
+line-height: 4em;
+text-align: center;
+float: left;
+}
+
+#navhead img{ 
+padding-right: 15px;
+margin-top: -8px;
+float: right;
+border-radius: 0px;
+}
+
+
+#hamburger { 
+float: left;
+height: 30px;
+width: 30px;
+line-height: 5em;
+color: #fff;
+padding-left: 10px;
+border-radius: 10px;
+}
+
+h3 { 
+font-size: 1em;
+text-transform: uppercase;
+color: #fff;
+
+}
+h4 { 
+font-size: 2em;
+text-transform: uppercase;
+color: #fff;
+margin-left: 2%;
+
+}
+#title { 
+float: left;
+line-height:10px;
+border-radius: 10px;
+width: 100%;
+height: 50px;
+margin-top: 20px;
+background-color: #606;
+
+}
+#title h4 { 
+margin-left: 3%;
+font-size: 1.2em;
+text-align: left;
+line-height: 1em;
+} 
+#navhead h3 { 
+font-size: 1.5em;
+line-height: 1em;
+} 
+
+#bodytx { 
+float: left;
+line-height:50px;
+border-radius: 10px;
+width: 100%;
+height: auto;
+margin-top: 10px; 
+margin-bottom: 10px;
+background-color: #ccc;
+
+}
+
+#pushbottom { 
+float: left;
+width: 100%;
+height: 20px;
+margin-top: 10px; 
+margin-bottom: 10px;
+}
+#quote{
+	float: left;
+	line-height: 50px;
+	border-radius: 10px;
+	width: 100%;
+	height: auto;
+	margin-top: 5px;	margin-bottom: 5px;
+	font-size: 2em;
+	line-height: 1.2em;
+	font-style: italic;
+}
+#bodytx p { 
+margin: 2%;
+color: #000;
+line-height: 1.8em;
+} 
+#bodytx img { 
+width: 100%;
+height: auto;
+
+} 
+
+
+
+#wrapper {
+  text-align: left;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+	
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  background: #ccc;
+  margin-right: 5px;
+  
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.swiper-active-switch {
+  background: #002C53;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: none;
+}
+
+h1 {
+
+}
+
+h2 {
+ 
+}
+
+h3 {
+
+	/*** h3 is the same size but a different color than h2 ***/
+}
+
+p { 
+	
+}
+
+.header {
+  position: absolute;
+  z-index: 10;
+  left: 0px;
+  top: 10px;
+  height: 100px;
+  width: 1020px;
+  text-align: left;
+  background-color: none;
+}
+
+.pic { 
+	float: none;
+	clear: both;
+	width:80% !important;
+	margin: 10%;
+}
+
+
+
+}
+
+@media screen and (max-width: 720px) {
+
+
+	
+}
+
+@media screen and (max-width: 640px) {
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+/* use this media query for landscape orientation on iPhone or iPod Touch */
+@media screen and (max-width: 480px) {
+
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+
+}
+
+

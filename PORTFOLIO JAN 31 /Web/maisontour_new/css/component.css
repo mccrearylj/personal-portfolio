@@ -1,0 +1,793 @@
+/*
+html, body, .container, .scroller {
+	height: 100%;
+}
+*/
+
+.ui-loader {
+	display: none;
+}
+
+
+body {
+	margin: 0 0 100px;
+	overflow: scroll;
+	font-size: 80%;
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	padding-bottom: 80px;
+}
+
+p { 
+	font-size: 1em;
+	text-align: left;
+}
+
+h2 { 
+	font-size: 1em;
+	text-align: left;
+} 
+
+#wrapper h2 {
+	font-size: 3.2em;
+	font-weight: 100;
+	text-align: center; 
+	color: #002C53;
+	text-transform: uppercase;
+	letter-spacing: 14px;
+}
+
+h3 { 
+	font-size: 1.5em;
+	text-transform: uppercase;
+	color: #002C53;
+	margin-top: 0;
+}
+
+h4 { 
+	font-size: 1.2em;
+}
+
+img { 
+	max-width: 100% !important;
+}
+
+.box { 
+	height: 100%;
+	width: 100%;
+	float: left;
+	display: block;
+	background-color: white;
+	z-index: 99;
+}
+
+#wrapper { 
+	width: 75%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#languagebox {
+	width: 40%;
+	height: 100%;
+	display: block;
+	padding-top: 5%;
+	margin: 5%;
+	float: left;
+	clear: none;
+	text-align: center;
+	border:solid thin;
+	border-color: rgb(153,153,153);
+}
+
+#sharebox {
+	width: 30%;
+	height: 100%;
+	display: block;
+	padding-top: 5%;
+	float: left;
+	clear: none;
+	text-align: center;
+}
+
+#linetop { 
+height: 110px;
+display: block;
+width: 1.5px;
+background-color: #BFD8F1;
+position: absolute;
+z-index: 9999999;
+left: 105px;
+}
+
+#linetop2 { 
+height: 110px;
+display: block;
+width: 1.5px;
+background-color: #BFD8F1;
+position: absolute;
+z-index: 9999999;
+right: 110px;
+}
+/*
+#linebottom { 
+height: 70px;
+bottom: 0px;
+width: 1.2px;
+background-color: white;
+position: relative;
+float: left;
+left: 20px;
+}
+
+#linebottom2 { 
+height: 70px;
+bottom: 0px;
+width: 1.2px;
+background-color:white;
+position: relative;
+float: left;
+right: 20px;
+}
+
+#linebottom3 { 
+height: 60px;
+bottom: 0px;
+display: block;
+width: 1.2px;
+background-color: white;
+position: absolute;
+z-index: 9999999;
+left: 404px;
+}
+
+#linebottom4 { 
+height: 60px;
+bottom: 0px;
+display: block;
+width: 1.2px;
+background-color: white;
+position: absolute;
+z-index: 9999999;
+right: 424px;
+}
+*/
+
+#title { 
+	width: 46%;
+	height: auto;
+	display: block;
+	color: #002C53;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+	margin: 2%;
+	float: left;
+}
+.midline { 
+	border-left:solid thin;
+	border-color: rgb(153,153,153);
+}
+#title2 { 
+	width: 96%;
+	height: auto;
+	display: block;
+	color: #002C53;
+	margin: 2%;
+	padding: 3%;
+	float: none;
+	clear: both;
+	border-top:solid thin;
+	border-bottom:solid thin;
+	border-color: rgb(153,153,153);
+}
+
+#photo {
+	width: 46%;
+	height: auto;
+	display: block;
+	float: left;
+	margin: 2%;
+}
+
+#photo2 {
+	width: 96%;
+	height: auto;
+	display: block;
+	float: none;
+	clear: both;
+	margin: 2%;
+}
+
+#topmost_header {
+	margin: 0 auto;
+	width: 100%;
+	height: 110px;
+	background-color: #002C53;
+	color: white;
+	padding-top: 15px;
+	background-image: url(logo_big.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+
+#topmost_header img {
+	float: left;
+	margin-left: 30px;
+}
+
+#flag {
+	position: absolute;
+	right: 35px;
+	top: 35px;
+	z-index: 99999;
+}
+
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+
+#leftnav {
+	width: 33%;
+	float: left;
+}
+
+#centernav {
+	width: 33%;
+	float: left;
+	text-align: center;
+	color: #002C53;
+	font-weight: bold;
+	letter-spacing: 2px;
+	line-height: 0em;
+	font-size: 1.3em;
+}
+
+#rightnav {
+	width: 33%;
+	float: right;
+}
+
+.skinnynav {
+	float: right;
+	letter-spacing: 0.1em;
+	margin-left: 4px;
+}
+
+.skinnynav2 {
+	float: left;
+	letter-spacing: 0.1em;
+	margin-right: 4px;
+}
+
+ 
+/* Top Navigation Style */
+.codrops-top {
+	width: 100%;
+	background-color: #BFD8F1;	
+	text-transform: uppercase;
+	font-size: 0.8em;
+	line-height: 1.1em;
+}
+
+.codrops-top a {
+	display: inline-block;
+	padding: 0 1em;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+}
+
+.codrops-top a:hover {
+	background: rgba(255,255,255,0.8);
+	color: #333;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.over {
+	text-align: center;
+	font-weight: bold;
+}
+
+.codrops-top span.right a {
+	display: block;
+	float: left;
+}
+
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+	text-align: center;
+	background-color: #002C53;
+	color: white;
+	padding-top: 15px;
+	z-index: 20;
+}
+
+.block {
+	float: left;
+	padding: 1em 3em;
+}
+
+.logo {
+	padding-right: 20px;
+}
+
+.logo img {  
+    height: 60%;  
+}
+
+a {
+	text-decoration: none;
+	color: #002C53;
+	outline: none;
+}
+a:hover, a:focus {
+	color: #fff;
+	outline: none;
+}
+#title a {
+	text-decoration: none;
+	color: #002C53;
+	outline: none;
+}
+#title a:hover, a:focus {
+	color: #80BB3D;
+	outline: none;
+}
+
+.container {
+	position: relative;
+	overflow: hidden;
+	background: #BFD8F1;
+}
+
+.menu-trigger {
+	position: relative;
+	margin-left: 50px;
+	margin-bottom: 0px;
+}
+
+.menu-trigger img {
+	height: 35%;
+	margin-top: 20px;
+	width: auto;
+}
+
+.menu-trigger:before {
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 40px;
+	height: 6px;
+	background: #fff;
+	box-shadow: 0 6px #34495e, 0 12px #fff, 0 18px #34495e, 0 24px #fff;
+}
+
+.mp-pusher {
+	position: relative;
+	left: 0;
+	height: 100%;
+}
+
+.mp-menu {
+	position: absolute; /* we can't use fixed here :( */
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 200px;
+	height: 100%;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	-moz-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+
+.mp-level {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #BFD8F1;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	-moz-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+
+/* overlays for pusher and for level that gets covered */
+.mp-pusher::after,
+.mp-level::after,
+.mp-level::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	content: '';
+	opacity: 0;
+}
+
+.mp-pusher::after,
+.mp-level::after {
+	background: rgba(0,0,0,0.3);
+	-webkit-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+	-moz-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+	transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+}
+
+.mp-pusher.mp-pushed::after,
+.mp-level.mp-level-overlay::after {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.mp-level.mp-level-overlay {
+	cursor: pointer;
+}
+.mp-pusher,
+.mp-level {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+/* First level */
+.mp-menu > .mp-level,
+.mp-menu > .mp-level.mp-level-open,
+.mp-menu.mp-overlap > .mp-level,
+.mp-menu.mp-overlap > .mp-level.mp-level-open {
+	box-shadow: none;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+
+/* content style */
+.mp-menu ul {
+	margin: 0;
+	padding: 0;
+	color: black;
+}
+
+.mp-menu h2 {
+	margin: 0;
+	padding: 1em;
+	color: rgba(0,0,0,0.4);
+	text-shadow: 0 0 1px rgba(0,0,0,0.1);
+	font-weight: 300;
+	font-size: 2em;
+}
+
+.mp-menu ul li > a {
+	display: block;
+	padding: 0.7em 1em 0.7em 1.8em;
+	outline: none;
+	box-shadow: inset 0 -1px rgba(0,0,0,0.2);
+	text-shadow: 0 0 1px rgba(255,255,255,0.1);
+	font-size: 1em;
+	-webkit-transition: background 0.3s, box-shadow 0.3s;
+	-moz-transition: background 0.3s, box-shadow 0.3s;
+	transition: background 0.3s, box-shadow 0.3s;
+}
+
+.mp-menu ul li::before {
+	position: absolute;
+	left: 10px;
+	z-index: -1;
+	color: rgba(0,0,0,0.2);
+	line-height: 3.5;
+}
+
+
+/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+/* We'll show the first level only */
+.no-csstransforms3d .mp-pusher,
+.no-js .mp-pusher {
+	padding-left: 300px;
+}
+
+.no-csstransforms3d .mp-menu .mp-level,
+.no-js .mp-menu .mp-level {
+	display: none;
+}
+
+.no-csstransforms3d .mp-menu > .mp-level,
+.no-js .mp-menu > .mp-level {
+	display: block;
+}
+
+
+/************** FOR TABLET/IPAD VERTICAL **************/
+@media only screen and (max-width: 768px) {
+
+#wrapper { 
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+p { 
+font-size: 1.1em;
+}
+
+#photo {
+	width: 100%;
+	padding: 5%;
+	float: none;
+	margin: 0 0 3% 0;
+}
+
+#title { 
+	width: 100%;
+	padding: 5%;
+	float: none;
+	margin: 0 0 3% 0;
+	border-top:solid thin;
+	border-bottom:solid thin;
+	border-color: rgb(153,153,153);
+}
+
+#title2 { 
+	width: 100%;
+	padding: 5%;
+	float: none;
+	margin: 0 0 3% 0;
+}
+
+.midline { 
+	border: none;
+}
+
+#leftnav {
+	font-size: 1.2em;
+	width: 25%;
+}
+
+#centernav {
+	font-size: 1.2em;
+	padding-top: 3px;
+	width: 50%;
+}
+
+#rightnav {
+	font-size: 1.2em;
+	width: 25%;
+}
+
+.skinnynav {
+	display: none;
+}
+
+.skinnynav2 {
+	display: none;
+}
+
+
+}
+
+
+/************** FOR MINI IPAD/KINDLE VERTICAL **************/
+@media screen and (max-width: 720px) {
+.menu-trigger {
+	position: relative;
+}
+
+.menu-trigger img {
+	height: 45%;
+	margin-top: 10px;
+	width: auto;
+}
+
+#flag {
+	top: 20px;
+}
+
+#linetop { 
+height: 80px;
+display: block;
+left: 96px;
+}
+
+#linetop2 { 
+height: 80px;
+display: block;
+right: 110px;
+}
+
+#topmost_header {
+	background-image: url(logo_medium.png);
+	height: 80px;
+}
+	
+#leftnav {
+	font-size: 1.2em;
+	width: 20%;
+}
+
+#centernav {
+	font-size: 1.2em;
+	width: 60%;
+}
+
+#rightnav {
+	font-size: 1.2em;
+	width: 20%;
+}
+
+.skinnynav {
+	display: none;
+}
+
+.skinnynav2 {
+	display: none;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+	height: 40px;
+    width: 100%;
+	text-align: center;
+	background-color: #002C53;
+	color: white;
+	padding-top: 10px;
+	z-index: 20;
+}
+
+.logo img {  
+    height: 60%;
+}
+p { 
+font-size: 1.2em;
+}
+
+#languagebox {
+	width: 90%;
+	display: block;
+	padding-top: 5%;
+	margin: 5%;
+	float: none;
+}
+
+
+#sharebox {
+	width: 90%;
+	display: block;
+	padding-top: 5%;
+	margin: 5%;
+	float: none;
+}
+	
+}
+
+/************** FOR IPHONE VERTICAL **************/
+@media screen and (max-width: 640px) {
+
+.menu-trigger img {
+	height: 40%;
+	width: auto;
+}
+
+.logo img {  
+    height: 70%;
+}
+
+#leftnav {
+	font-size: 1.2em;
+	width: 20%;
+}
+
+#centernav {
+	font-size: 1.2em;
+	width: 60%;
+}
+
+#rightnav {
+	font-size: 1.2em;
+	width: 20%;
+}
+
+#footer {
+	height: 30px;
+}
+
+.mp-menu ul li > a {
+	font-size: 0.8em;
+}
+
+#title { 
+	padding: 10%;
+}
+
+#wrapper h2 {
+	font-size: 1.8em;
+	letter-spacing: 10px;
+}
+}
+
+/************** FOR SMALL PHONE VERTICAL **************/
+@media screen and (max-width: 480px) {
+
+
+.logo {
+	padding-right: 10px;
+}
+
+
+.codrops-top {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.1);
+	text-transform: uppercase;
+	font-size: 0.8em;
+	line-height: 0.5em;
+}
+
+#linetop { 
+	height: 80px;
+	left: 70px;
+}
+
+#linetop2 { 
+	height:80px;
+	right: 80px;
+}
+
+#flag {
+	top: 15px;
+	right: 19px;
+}
+
+
+#topmost_header {
+	background-image: url(logo_small.png);
+	height: 70px;
+}
+
+#topmost_header img {
+	margin-left: 20px;
+}
+
+
+}
+
+/************** FOR OLD ASS PHONES VERTICAL **************/
+@media screen and (max-width: 320px) {
+
+
+
+
+}

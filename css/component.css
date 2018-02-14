@@ -1,0 +1,73 @@
+/* STYLE FOR PUSH MENU */
+
+a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+.main > section {
+	margin: 0 auto;
+	float: right;
+	margin-right: 20px;
+	margin-top: 15px;
+}
+
+.main > section button {
+	border: none;
+	background: none;
+	color: black;
+	cursor: pointer;
+	font-size: 2.8em;
+}
+
+.main > section button:hover {
+	color: #868686;
+}
+
+.main > section button.active {
+	color: black;
+}
+
+
+
+.cbp-spmenu {
+	background: #5A5A5A;
+	position: fixed;
+	margin-right: 20px;
+	margin-top: 70px;
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: #fff;
+	font-size: 0.9em;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.cbp-spmenu a:hover {
+	background: #2FCDD9;
+}
+
+.cbp-spmenu-vertical a {
+	padding: 1em;
+}
+
+.cbp-spmenu-right {
+	right: -160px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}

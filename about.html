@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LJM Design</title>
+
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<LINK href="reset.css" rel="stylesheet" type="text/css">
+<LINK href="style.css" rel="stylesheet" type="text/css">
+<link href="animate.css" rel="stylesheet">
+
+<link href='http://fonts.googleapis.com/css?family=Lato:400,100italic,100,300,300italic,400italic,700italic,700' rel='stylesheet' type='text/css'>
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
+
+<style>
+
+html {
+	background: rgba(248,248,248,1); 
+  	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<header>
+	<div id="logo">
+  		<a href="index.html"><img src="lizzielogo4-04.png" width="60" height="60"  alt=""/></a>
+	</div>
+    
+    <div id="logo2">
+  		<a href="index.html"><img src="lizzielogo4-04.png" width="80" height="80"  alt=""/></a>
+	</div>
+
+		<div id="navwrapper">
+  			<nav id="navlist">
+  				<ul>
+      				<li><a class="transition" href="work.html"><h3>WORK</h3></a></li>
+                    <li><a class="transition" href="studio.html"><h3>STUDIO</h3></a></li>
+      				<li><a class="transition" href="about.html"><h3><span style="color:#2FCDD9"><span style="border-bottom:3px solid #2FCDD9">ABOUT</span></span></h3></a></li>
+      				<li><a class="transition" href="contact.html"><h3>CONTACT</h3></a></li>
+  				</ul>
+  			</nav>
+ 		</div>
+        
+        <div id="menu">      
+        	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+				<a href="index.html">Home</a>
+            	<a href="work.html">Work</a>
+                <a href="studio.html">Studio</a>
+				<a href="about.html"><span style="color: yellow"><span style="font-weight: 700">About</span></span></a>
+				<a href="contact.html">Contact</a>
+            	<a href="http://www.linkedin.com/in/lindseymccreary" target="_blank">LinkedIn</a>
+			</nav>
+		
+			<div class="container">
+				<div class="main">
+					<section>
+						<button id="showRight"><i class="fa fa-bars"></i></button>
+					</section>
+				</div>
+			</div>
+        </div>
+
+</header>
+
+
+	<div id="about_wrapper">
+		<div id="about" class="animated fadeInDown">
+    		<img src="Images/photo-1.png" height="200" width="200" class="circular">
+            <br><br>
+        	<h2 class="animated fadeInUp"><span style="font-weight: 300"><span style="font-size: 1.5em">lizzie jean mccreary<br></span></span></h2><br>
+        
+        	<div id="resume_top">
+            	<a class="box" href="mccrearyresume_2015.pdf" download="mccreary_resume.pdf" target="_blank">DOWNLOAD RESUME</a>
+            </div>
+            
+        	<div id="three">
+        		<h3><span style="color:#FF61EE"><span style="font-size:3em"><i class="fa fa-code"></i></span></span><br><a href="web_ds.html">web + app development</a></h3>
+        		<h3><span style="color:#FC3"><span style="font-size:3em"><i class="fa fa-users"></i></span></span><br><a href="digital_archery.html">UX/UI design</a></h3>
+            	<h3><span style="color:#42C7DF"><span style="font-size:3em"><i class="fa fa-file-o"></i></span></span><br><a href="work_football.html">branding + print design</a></h3>
+        	</div>
+        
+        <div id="about_paragraph">
+        	<p><span style="font-weight:400">Hi! I&rsquo;m Lizzie.</span> I am a web, graphic, and UX/UI designer; I am a creative problem solver. I stepped into the design world 7 years ago and have been working in a professional setting for 4 years. My passion lies in designing and coding websites, and I love all forms of print design. I also dabble in digital publication design with a tablet, and designing mobile applications. <span style="font-weight:400">I look forward to working with you.<br><br></span></p>
+    		<br><br>
+           
+            <div id="resume_bottom">
+            	<a class="box" href="mccrearyresume_2015.pdf" download="mccreary_resume.pdf" target="_blank">DOWNLOAD RESUME</a><br><br><br><br>
+            </div>
+         </div>   
+            
+        </div>
+	</div>
+    
+    
+<footer id="footer">
+  <p>&copy;LIZZIE JEAN MCCREARY 2015</p>
+</footer>
+
+
+	<script src="js/classie.js"></script>
+		<script>
+			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				body = document.body;
+
+				showRight.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+			};
+		</script>
+
+    
+</body>
+</html>
